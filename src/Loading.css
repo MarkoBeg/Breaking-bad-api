@@ -1,0 +1,47 @@
+.data {
+  display: grid;
+  grid-template-columns: 300px repeat(auto-fill, 375px) 300px;
+  gap: 15px;
+  justify-content: center;
+}
+.dataCharacter-section {
+  background-color: lightseagreen;
+  color: lightgray;
+  text-align: center;
+  border-radius: 8px;
+}
+.dataCharacter-section > img {
+  height: 400px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.dataCharacter-section h2 {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1px;
+}
+.dataCharacter-section h4 {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+}
+.dataCharacter-section > span {
+  font-weight: 400;
+  font-size: 18px;
+}
+.dataCharacter-section > p {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

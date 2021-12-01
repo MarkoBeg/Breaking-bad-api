@@ -1,0 +1,14 @@
+.search-section {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 55px;
+  padding-top: 85px;
+}
+.search {
+  width: 450px;
+  padding: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

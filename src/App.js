@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import axios from "axios";
+import { useState, useEffect } from "react";
+import Search from "./Search";
+import Loading from "./Loading";
 
 function App() {
+  const [allChar, setAllChar] = useState([]);
+  const [nameQuery, setNameQuery] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const getAllCharacters = async () => {
+      const allCharacters = await axios.get(
+        `https://www.breakingbadapi.com/api/characters?name=${nameQuery}`
+      );
+
+      console.log(allCharacters.data);
+      setAllChar(allCharacters.data);
+      setLoading(false);
+    };
+    getAllCharacters();
+    setLoading(true);
+  }, [nameQuery]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="app-section">
+        <Search nameSearch={(name) => setNameQuery(name)}></Search>
+        <Loading isLoading={loading} data={allChar}></Loading>
+      </div>
     </div>
   );
 }
