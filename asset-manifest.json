@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Breaking-bad-api/static/css/main.03d1dfb5.chunk.css",
+    "main.js": "/Breaking-bad-api/static/js/main.c9d3e46f.chunk.js",
+    "main.js.map": "/Breaking-bad-api/static/js/main.c9d3e46f.chunk.js.map",
+    "runtime-main.js": "/Breaking-bad-api/static/js/runtime-main.47ab825b.js",
+    "runtime-main.js.map": "/Breaking-bad-api/static/js/runtime-main.47ab825b.js.map",
+    "static/js/2.53c745f5.chunk.js": "/Breaking-bad-api/static/js/2.53c745f5.chunk.js",
+    "static/js/2.53c745f5.chunk.js.map": "/Breaking-bad-api/static/js/2.53c745f5.chunk.js.map",
+    "index.html": "/Breaking-bad-api/index.html",
+    "static/css/main.03d1dfb5.chunk.css.map": "/Breaking-bad-api/static/css/main.03d1dfb5.chunk.css.map",
+    "static/js/2.53c745f5.chunk.js.LICENSE.txt": "/Breaking-bad-api/static/js/2.53c745f5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47ab825b.js",
+    "static/js/2.53c745f5.chunk.js",
+    "static/css/main.03d1dfb5.chunk.css",
+    "static/js/main.c9d3e46f.chunk.js"
+  ]
+}
